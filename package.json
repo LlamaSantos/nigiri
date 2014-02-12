@@ -1,0 +1,27 @@
+{
+	"name" : "nigiri",
+	"version" : "0.1.0",
+	"description" : "Flexible hierarchical rendering engine.",
+	"author" : "James R. White <james@llamasantos.com>",
+	"contributors" : [
+		{ "name" : "James R. White" },
+		{ "name" : "Alexander Marinenko" }
+	],
+	"repository" : "https://github.com/LlamaSantos/nigiri.git",
+	"keywords" : [
+		"isomorphic",
+		"rendering",
+		"browserify"
+	],
+	"dependencies" : {
+		"async" : "*",
+		"eventemitter2" : "*"
+	},
+	"devDependencies" : {
+		"mocha" : "*"
+	},
+	"scripts" : {
+		"test" : "mocha -R spec"
+	},
+	"license" : "MIT"
+}
