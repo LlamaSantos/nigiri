@@ -9,6 +9,7 @@ Flexible hierarchical rendering engine.
 
 ```JavaScript
 var nigiri = require('nigiri')({ delimeter : '.' });
+
 nigiri.on('feature1.render', function (){
 	// React to the rendering
 });
