@@ -5,7 +5,8 @@
 	"author" : "James R. White <james@llamasantos.com>",
 	"contributors" : [
 		{ "name" : "James R. White" },
-		{ "name" : "Alexander Marinenko" }
+		{ "name" : "Alexander Marinenko" },
+		{ "name" : "Erin Houston" }
 	],
 	"repository" : "https://github.com/LlamaSantos/nigiri.git",
 	"keywords" : [
