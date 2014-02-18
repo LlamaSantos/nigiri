@@ -1,6 +1,6 @@
 {
 	"name" : "nigiri",
-	"version" : "0.1.1",
+	"version" : "0.2.1",
 	"description" : "Flexible hierarchical rendering engine.",
 	"author" : "James R. White <james@llamasantos.com>",
 	"contributors" : [
