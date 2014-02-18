@@ -38,4 +38,27 @@ describe('Views', function (){
 			done();
 		});
 	});
+
+	it ('should dynamically render a page from defined children', function (done){
+		var views = require('../lib/nigiri.js')();
+
+		views.define('w1', [], function (data, children, cb){
+			cb(null, 'w1 ' + data.data1);
+		});
+
+		views.define('w2', [], function (data, children, cb){
+			cb(null, 'w2 ' + data.data2);
+		});
+
+
+		views.dynamic({ data1: 'hello', data2: 'world' }, ['w1', 'w2'], 
+			function(err, data, children){
+				assert.ok(err === null, 'Error is not null.');
+				assert.ok(children.w1 === 'w1 hello', 'w1 sucks');
+				assert.ok(children.w2 === 'w2 world', 'w2 sucks');
+				done();
+			}
+		);
+
+	});
 });
