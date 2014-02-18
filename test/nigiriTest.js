@@ -61,4 +61,14 @@ describe('Views', function (){
 		);
 
 	});
+
+	it ('should render nothing when a missing template is supplied', function (done){
+		var views = require('../lib/nigiri.js')();
+
+		views.render('tmpl', {}, function (err, result){
+			assert.ok(err === 'missing template');
+			assert.ok(result === '');
+			done();
+		});
+	});
 });
